@@ -39,7 +39,7 @@ body {
   z-index: 2;
   display: flex;
   padding: 20px;
-  height: calc(100% - 40px); 
+  height: calc(100% - 40px);
   overflow-y: auto;
 }
 
@@ -53,10 +53,13 @@ body {
   border-radius: 50%;
   object-fit: cover;
   transition: box-shadow 0.3s ease;
+  outline: 2px solid transparent; /* Added outline */
 }
 
-.profile-pic img:hover {
+.profile-pic img:hover,
+.profile-pic img:focus {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  outline: 2px solid white; /* Added outline color on hover/focus */
 }
 
 .right-section {
